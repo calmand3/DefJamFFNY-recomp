@@ -1,9 +1,11 @@
 @AGENTS.md
+@FORK.md
 
 # Claude Code notes
 
 Everything above is the shared instruction set (`AGENTS.md`, which Codex reads directly). Edit that file, not this
-one. This file holds only what applies to Claude Code.
+one. `FORK.md` is this fork's own instruction set and overrides `AGENTS.md` where they disagree. This file holds
+only what applies to Claude Code.
 
 - **Sub-agents.** Spawn a delegated reading task with `subagent_type: general-purpose`, `model: sonnet`, in the
   background, and keep working meanwhile. The project agents `re-reader` (Sonnet) and `log-triage` (Haiku) in
