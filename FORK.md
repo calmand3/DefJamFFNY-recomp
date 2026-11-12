@@ -78,15 +78,18 @@ Other ideas (new modes, new match types, AI-driven opponents) get a row here whe
 Rewrite this section at the end of each session.
 
 - 2026-11-12: fork created at upstream `v1.2.0-beta.2`. This file added. No fork code changes yet.
+- 2026-11-12: owner is on Windows with their own disc image; build tools installing. First project is Track A:
+  one original fighter, mesh generated with the owner's Meshy subscription. Static read of the model compiler:
+  `docs/fork/research/model-compiler-read-2026-11-12.md` (no generic-mesh importer exists; a converter is needed).
 - **Where work can run.** A cloud agent session has no dump and cannot build or run the game: it can read,
   research, design, and write code and unit tests. Building and running need the owner's computer with their
   own dump (`docs/build-and-play.md`, `docs/build-macos-linux.md`).
-- **Next:** answer the open questions below, then start the first step of the top-priority track.
+- **Next:** get the stock build running on the owner's computer; make an inheriting fighter pack to prove the
+  install loop; export one retail donor and print its geometry and skin metadata; then write the GLB converter.
 
 ## 7. Open questions for the owner
 
 1. Priority order of tracks A to D: is the default order in §2 right?
-2. Which computer will build and run the game (Windows, macOS, Linux or Steam Deck), and is a verified USA
-   Xbox dump already set up on it?
+2. Answered 2026-11-12: Windows. The dump is not yet verified against `config/dump-manifest.json`.
 3. Is this fork meant to stay public? That decides how strictly content sources must be vetted before commit.
 4. Should fork work ever be offered back to upstream, or is this a separate line for good?
